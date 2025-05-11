@@ -1,0 +1,269 @@
+/* Importación de la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #ffece3; /* Color de fondo restaurado */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 1.25rem; /* Aumenta el tamaño base */
+  line-height: 1.6;
+  
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5vw; /* Espaciado entre el texto y la imagen */
+}
+
+/* Sección del texto */
+.text-section {
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem; /* Tamaño grande para el título */
+  color: #000;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem; /* Subtítulo más pequeño */
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.5rem; /* Párrafo más grande */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+    background-color: #e88c79; /* Color de fondo similar al de la imagen */
+    color: white;
+    font-family: 'Patrick Hand', cursive; /* La misma fuente usada en tu página */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    padding: 15px 30px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    border: none; /* Sin borde visible */
+    cursor: pointer; /* Indicador de cursor al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos de transición */
+}
+
+button:hover {
+    background-color: #d77a67; /* Cambio de color al pasar el cursor */
+    transform: scale(1.05); /* Levemente aumenta el tamaño */
+}
+
+.hearts {
+  margin-top: 20px;
+}
+
+.heart {
+  font-size: 3rem; /* Corazones más grandes */
+  color: #f7c9b0;
+}
+
+/* Imagen */
+.image-section {
+    width: 100%; /* El contenedor de la imagen ocupará el 100% del ancho disponible */
+    max-width: 500px; /* Asegura que la imagen no crezca más allá de cierto tamaño */
+    height: auto; /* El contenedor se ajustará proporcionalmente */
+    animation-delay: 0.3s;
+  }
+
+.image-section img {
+    width: 100%; /* El contenedor de la imagen ocupará el 100% del ancho disponible */
+    max-width: 500px; /* Asegura que la imagen no crezca más allá de cierto tamaño */
+    object-fit: cover; /* La imagen se ajusta para no recortarse ni distorsionarse */
+    animation-delay: 0.3s;
+}
+
+/* Media Queries - Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Hacer el título más pequeño */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .image-section img {
+        max-width: 80%;  /* Reducir el tamaño de la imagen */
+        margin-bottom: 20px;
+    }
+
+    .text-section {
+        font-size: 1rem;  /* Reducir el tamaño de la fuente */
+    }
+
+    /* Ajustes para el contenedor */
+    .container {
+        flex-direction: column;  /* Apilar los elementos verticalmente */
+        align-items: center;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Animación de entrada desde abajo */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de entrada con escala y difuminado */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Aplicar animaciones a los elementos de texto */
+h1 {
+  animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+p {
+  animation: fadeInUp 2s ease-out;
+}
+
+button {
+  animation: zoomIn 2.5s ease-out;
+}
+
+.heart {
+  animation: zoomIn 3s ease-out;
+}
+
+/* Opcional: hacer que los corazones reboten un poco */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.hearts .heart {
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+/* Entrada suave desde la derecha */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Efecto flotante para imagen */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Efecto pulso suave */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+/* Aplicar animación a la imagen principal */
+.image-section img {
+  animation: slideInRight 1.2s ease-out, float 4s ease-in-out infinite;
+}
+
+/* Corazones con pulso lento */
+.heart {
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.8);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(1.2);
+  }
+}
+
+/* Estilo base para corazones flotantes */
+.floating-heart {
+  position: absolute;
+  font-size: 2rem;
+  color: #f7c9b0;
+  animation: floatUp 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Variaciones para diferentes tiempos y posiciones */
+.heart1 {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.heart2 {
+  left: 50%;
+  animation-delay: 1.5s;
+}
+
+.heart3 {
+  left: 80%;
+  animation-delay: 3s;
+}
+
