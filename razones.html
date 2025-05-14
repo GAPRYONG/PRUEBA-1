@@ -3,63 +3,138 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>♡ Sonrisas compartidas ♡</title>
-  <link rel="stylesheet" href="main.css" />
+  <title>♡ Todo esto nace por ti ♡</title>
+  <style>
+    /* Importación de la fuente de Google */
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background-color: #ffece3;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: left;
+      background-color: #ffece3;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #ff4d4d;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+
+    li::before {
+      content: "♡";
+      font-size: 2rem;
+      color: #f7c9b0;
+      margin-right: 10px;
+    }
+
+    /* Animación de aparición */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>♡ Todo esto nace por ti ♡</h1>
+    <h1 class="fade-in">♡ Todo esto nace por ti ♡</h1>
 
-    <h2>🌸 Te amo por lo que provocas en mí</h2>
+    <h2 class="fade-in">🌸 Te amo por lo que provocas en mí</h2>
     <ul>
-      <li>Te amo porque siempre me sacas una sonrisa.</li>
-      <li>Te amo porque contigo soy yo mismo.</li>
-      <li>Te amo porque cada vez que hablamos me haces olvidar todo lo demás.</li>
-      <li>Te amo porque me haces sonreír con tus ocurrencias.</li>
-      <li>Te amo porque me haces feliz desde el día en que me enamoré de ti.</li>
-      <li>Te amo porque al final de todo me demuestras que me amas.</li>
-      <li>Te amo porque cuando me dices que soy tuyo, siento que pertenezco a algo bonito.</li>
-      <li>Te amo porque cada pensamiento que tengo al dormir y al despertar eres tú.</li>
-      <li>Te amo porque eres mi razón de sonreír todos los días.</li>
-      <li>Te amo porque me haces querer ser mejor por ti y para ti.</li>
-      <li>Te amo porque me haces querer darte el amor que nunca tuve.</li>
+      <li class="fade-in">Te amo porque siempre me sacas una sonrisa.</li>
+      <li class="fade-in">Te amo porque contigo soy yo mismo.</li>
+      <li class="fade-in">Te amo porque cada vez que hablamos me haces olvidar todo lo demás.</li>
+      <li class="fade-in">Te amo porque me haces sonreír con tus ocurrencias.</li>
+      <li class="fade-in">Te amo porque me haces feliz desde el día en que me enamoré de ti.</li>
+      <li class="fade-in">Te amo porque al final de todo me demuestras que me amas.</li>
+      <li class="fade-in">Te amo porque cuando me dices que soy tuyo, siento que pertenezco a algo bonito.</li>
+      <li class="fade-in">Te amo porque cada pensamiento que tengo al dormir y al despertar eres tú.</li>
+      <li class="fade-in">Te amo porque eres mi razón de sonreír todos los días.</li>
+      <li class="fade-in">Te amo porque me haces querer ser mejor por ti y para ti.</li>
+      <li class="fade-in">Te amo porque me haces querer darte el amor que nunca tuve.</li>
     </ul>
 
-    <h2>🌷 Te amo por quién eres tú</h2>
+    <h2 class="fade-in">🌷 Te amo por quién eres tú</h2>
     <ul>
-      <li>Te amo porque admiro muchísimo tu forma de ser.</li>
-      <li>Te amo porque eres la chica más hermosa que he conocido y lo seguirás siendo.</li>
-      <li>Te amo porque eres una persona maravillosa.</li>
-      <li>Te amo porque eres tú y nadie más.</li>
-      <li>Te amo porque me gusta todo de ti.</li>
-      <li>Te amo porque eres la forma más bonita que tuvo la vida de decirme que puedo ser feliz.</li>
+      <li class="fade-in">Te amo porque admiro muchísimo tu forma de ser.</li>
+      <li class="fade-in">Te amo porque eres la chica más hermosa que he conocido y lo seguirás siendo.</li>
+      <li class="fade-in">Te amo porque eres una persona maravillosa.</li>
+      <li class="fade-in">Te amo porque eres tú y nadie más.</li>
+      <li class="fade-in">Te amo porque me gusta todo de ti.</li>
+      <li class="fade-in">Te amo porque eres la forma más bonita que tuvo la vida de decirme que puedo ser feliz.</li>
     </ul>
 
-    <h2>💞 Te amo por la vida que estamos construyendo juntos</h2>
+    <h2 class="fade-in">💞 Te amo por la vida que estamos construyendo juntos</h2>
     <ul>
-      <li>Te amo porque eres mi Samy y de nadie más.</li>
-      <li>Te amo porque me permitiste estar a tu lado.</li>
-      <li>Te amo porque aunque tengas tus momentos, me sigues eligiendo.</li>
-      <li>Te amo porque llegaste a mi vida.</li>
-      <li>Te amo porque me importas mucho y lo seguirás siendo.</li>
-      <li>Te amo porque a pesar de todo lo bueno o malo que pasemos, seguimos aquí.</li>
-      <li>Te amo porque me haces feliz con detalles que quizás no notas, pero yo sí.</li>
-      <li>Te amo porque incluso cuando no estás, me nace cuidarte y darte lo mejor.</li>
-      <li>Te amo porque no dejas de enamorarme.</li>
+      <li class="fade-in">Te amo porque eres mi Samy y de nadie más.</li>
+      <li class="fade-in">Te amo porque me permitiste estar a tu lado.</li>
+      <li class="fade-in">Te amo porque aunque tengas tus momentos, me sigues eligiendo.</li>
+      <li class="fade-in">Te amo porque llegaste a mi vida.</li>
+      <li class="fade-in">Te amo porque me importas mucho y lo seguirás siendo.</li>
+      <li class="fade-in">Te amo porque a pesar de todo lo bueno o malo que pasemos, seguimos aquí.</li>
+      <li class="fade-in">Te amo porque me haces feliz con detalles que quizás no notas, pero yo sí.</li>
+      <li class="fade-in">Te amo porque incluso cuando no estás, me nace cuidarte y darte lo mejor.</li>
+      <li class="fade-in">Te amo porque no dejas de enamorarme.</li>
     </ul>
 
-    <h2>🌟 Te amo porque me haces sentir seguro</h2>
+    <h2 class="fade-in">🌟 Te amo porque me haces sentir seguro</h2>
     <ul>
-      <li>Te amo porque eres la mujer que me hace sentir amado.</li>
-      <li>Te amo porque me haces olvidar lo malo cuando te escucho.</li>
-      <li>Te amo porque eres mi lugar seguro.</li>
-      <li>Te amo por amarme de la manera que lo haces.</li>
-      <li>Te amo porque cuando jugamos, nos reímos juntos.</li>
-      <li>Te amo porque cada vez que me dices "mi niño", me da un ataque xd.</li>
-      <li>Te amo simplemente... porque eres tú.</li>
+      <li class="fade-in">Te amo porque eres la mujer que me hace sentir amado.</li>
+      <li class="fade-in">Te amo porque me haces olvidar lo malo cuando te escucho.</li>
+      <li class="fade-in">Te amo porque eres mi lugar seguro.</li>
+      <li class="fade-in">Te amo por amarme de la manera que lo haces.</li>
+      <li class="fade-in">Te amo porque cuando jugamos, nos reímos juntos.</li>
+      <li class="fade-in">Te amo porque cada vez que me dices "mi niño", me da un ataque xd.</li>
+      <li class="fade-in">Te amo simplemente... porque eres tú.</li>
     </ul>
-
   </div>
+
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    let delay = 0;
+
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, delay);
+      delay += 300; // Puedes ajustar la velocidad aquí (en milisegundos)
+    });
+  </script>
 </body>
 </html>
+
 
