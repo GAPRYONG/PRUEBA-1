@@ -41,19 +41,12 @@
     </div>
   </div>
 
-   <script>
-    // Variable para detectar si la página se ha recargado
-    let isReloaded = sessionStorage.getItem('reload');
-    
-    // Si la página se recarga
-    if (isReloaded) {
-        // Redirige a index.html
-        window.location.href = "index.html";
-    } else {
-        // Si la página no se ha recargado, marcamos que ya se recargó
-        sessionStorage.setItem('reload', 'true');
-    }
-  </script>
+ <script>
+        window.onload = function () {
+            var contenedor = document.getElementById('barracarga');
+            contenedor.style.display = 'none'; // Eliminar la pantalla de carga
+        }
+    </script>
 
 </body>
 </html>
