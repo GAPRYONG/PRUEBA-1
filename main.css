@@ -1,0 +1,57 @@
+/* Importación de la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  background-color: #ffece3; /* Fondo color pastel suave */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: center; /* Centra el contenido en la página */
+}
+
+/* Contenedor */
+.container {
+  max-width: 800px; /* Aumento el tamaño del contenedor */
+  margin: 50px auto;
+  text-align: left; /* Asegura que el texto de la lista esté alineado a la izquierda */
+  background-color: #ffece3;
+  padding: 20px; /* Agrego un poco de relleno */
+}
+
+/* Título */
+h1 {
+  font-size: 4rem;
+  color: #ff4d4d; /* Color rojo para el título */
+  margin-bottom: 20px;
+  text-align: center; /* Centra el título */
+}
+
+/* Lista de elementos */
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Centra los elementos de la lista */
+}
+
+li {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  display: flex; /* Utilizo flex para que el texto y el corazón se alineen horizontalmente */
+  align-items: center; /* Centra el texto y el corazón verticalmente */
+  justify-content: start; /* Alinea el contenido a la izquierda */
+}
+
+li::before {
+  content: "♡"; /* Corazones al inicio de cada línea */
+  font-size: 2rem;
+  color: #f7c9b0; /* Color del corazón */
+  margin-right: 10px; /* Separación entre el corazón y el texto */
+}
+
+li {
+  text-decoration: none; /* Elimina el tachado */
+}

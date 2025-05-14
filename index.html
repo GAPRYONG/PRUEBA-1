@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>60 razones por las que te amo, Samy</title>
 
   <!-- Vincula tu CSS personalizado -->
@@ -23,10 +23,13 @@
         es solo el comienzo de todo lo que quiero darte
       </p>
 
-      <button>Ver por qué te amo tanto</button>
+      <!-- Enlace alrededor del botón -->
+      <a href="razones.html">
+        <button>Ver por qué te amo tanto</button>
+      </a>
 
       <div class="hearts">
-        <span class="heart">♡</span>
+        <span class="heart">♡</span>  
         <span class="heart">♡</span>
         <span class="heart">♡</span>
       </div>
@@ -37,5 +40,20 @@
       <img src="img/Imágenes_Y_Gifs_de_anime__-_-removebg-preview.png" />
     </div>
   </div>
+
+   <script>
+    // Variable para detectar si la página se ha recargado
+    let isReloaded = sessionStorage.getItem('reload');
+    
+    // Si la página se recarga
+    if (isReloaded) {
+        // Redirige a index.html
+        window.location.href = "index.html";
+    } else {
+        // Si la página no se ha recargado, marcamos que ya se recargó
+        sessionStorage.setItem('reload', 'true');
+    }
+  </script>
+
 </body>
 </html>
