@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>♡ Todo esto nace por ti ♡</title>
+  <script>
+        window.onload = function () {
+            // Obtener el audio desde el DOM
+            var audio = document.getElementById('audioGlobal');
+
+            // Iniciar la reproducción automáticamente cuando se cargue la página
+            if (audio.paused) {
+                audio.play();
+            }
+        };
+    </script>
   <style>
     /* Importación de la fuente de Google */
     @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -69,6 +81,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1 class="fade-in">♡ Todo esto nace por ti ♡</h1>
@@ -134,7 +147,11 @@
       delay += 300; // Puedes ajustar la velocidad aquí (en milisegundos)
     });
   </script>
+
+  </div>
+             <!-- El audio sigue siendo reproducido en segundo plano -->
+                <audio id="audioGlobal" src="audio/yung kai - blue (with MINNIE) [Official Audio].mp3"
+                    preload="auto" loop></audio>
+
 </body>
 </html>
-
-
