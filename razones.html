@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>♡ Todo esto nace por ti ♡</title>
   <script>
-        window.onload = function () {
-            // Obtener el audio desde el DOM
-            var audio = document.getElementById('audioGlobal');
+    window.onload = function () {
+      // Obtener el audio desde el DOM
+      var audio = document.getElementById('audioGlobal');
 
-            // Iniciar la reproducción automáticamente cuando se cargue la página
-            if (audio.paused) {
-                audio.play();
-            }
-        };
-    </script>
+      // Iniciar la reproducción automáticamente cuando se cargue la página
+      if (audio.paused) {
+        audio.play();
+      }
+    };
+  </script>
   <style>
     /* Importación de la fuente de Google */
     @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -79,6 +79,20 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    .final-message {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: left;
+      background-color: #ffece3;
+      padding: 20px;
+    }
+
+    .final-message p {
+      font-size: 1.1em;
+      font-style: italic;
+      line-height: 1.6;
+    }
   </style>
 </head>
 
@@ -134,24 +148,38 @@
       <li class="fade-in">Te amo porque cada vez que me dices "mi niño", me da un ataque xd.</li>
       <li class="fade-in">Te amo simplemente... porque eres tú.</li>
     </ul>
-  </div>
+    <div class="final-message">
+      <h2>Para ti, Samy ♡</h2>
+      <p>
+        Samy, mi amor:
+        Hoy es nuestro segundo aniversario. Ya son dos meses desde que me enamoré de ti, y es algo que agradezco con
+        todo el corazón.
 
-  <script>
-    const elements = document.querySelectorAll('.fade-in');
-    let delay = 0;
+        Gracias por ser como eres, por elegirme, por quedarte. Cada palabra que escribo aquí nace de todo lo que siento
+        por ti. Aunque son solo algunas de las muchas razones que tengo para amarte, nunca serán suficientes para
+        explicar lo que me haces sentir.
 
-    elements.forEach((el, index) => {
-      setTimeout(() => {
-        el.classList.add('visible');
-      }, delay);
-      delay += 300; // Puedes ajustar la velocidad aquí (en milisegundos)
-    });
-  </script>
+        Quiero que recuerdes siempre esto:
+        <strong>Te amo, Samy, como nunca imaginé poder amar a alguien.</strong> No me cansaré de decirlo.
+        Te amo desde lo más profundo de mi corazón.
 
-  </div>
-             <!-- El audio sigue siendo reproducido en segundo plano -->
-                <audio id="audioGlobal" src="audio/yung kai - blue (with MINNIE) [Official Audio].mp3"
-                    preload="auto" loop></audio>
+        Eres mi lugar favorito, mi razón de sonreír, mi amor. ♡
+      </p>
+    </div>
+
+    <script>
+      const elements = document.querySelectorAll('.fade-in');
+      let delay = 0;
+      elements.forEach((el) => {
+        setTimeout(() => {
+          el.classList.add('visible');
+        }, delay);
+        delay += 300;
+      });
+    </script>
+
+    <audio id="audioGlobal" src="audio/yung kai - blue (with MINNIE) [Official Audio].mp3" preload="auto" loop></audio>
 
 </body>
+
 </html>
